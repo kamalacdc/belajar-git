@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around the header */
+    position: sticky; /* Allows for positioning of child elements */
+}
+
+nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    
+}
+
+nav h1 {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal list */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between list items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    padding: 0; /* Remove padding to align with the image */
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block; /* Ensures there are no gaps under the image */
+    z-index: -1;
+}
+.hero-image2{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.hero-content h2,
+.hero-content p {
+    margin: 0; /* Remove default margins */
+}
+
+#about, #skills, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2, #skills h2, #contact h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 30%;
+    
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
